@@ -1,0 +1,39 @@
+@keyframes blinker {
+    from {
+      visibility: hidden;
+    }
+
+    50% {
+      visibility: hidden;
+    }
+
+    to {
+      visibility: visible;
+    }
+  }
+
+  #logger {
+    width: 100%;
+    height: 560px;
+    display: block;
+    padding: 16px;
+    color: lightgreen;
+    background: #2b2b2b;
+    border: solid 4px #bdbdbd;
+    border-radius: 6px;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  #logger p {
+    margin: 0;
+  }
+
+  #logger p:last-child::after {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 14px;
+    background: lightgreen;
+    animation: blinker 1s infinite;
+  }

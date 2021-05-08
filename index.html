@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <title>Requesting Loop with Promises</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row mt-3 mb-4">
+      <div class="col">
+        <h1>Requesting Loop with Promises</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <h2 class="mb-4">
+          <i class="fas fa-sliders-h" aria-hidden="true"></i>
+          Controls
+        </h2>
+        <p>
+          Use the following buttons to control the requesting loop e check out
+          the results in the logs area.
+        </p>
+        <button id="startBtn" class="btn btn-primary">
+          <i class="fa fa-play"></i>
+          Start
+        </button>
+        <button id="stopBtn" class="btn btn-danger">
+          <i class="fa fa-stop"></i>
+          Stop
+        </button>
+        <button id="clearBtn" class="btn btn-secondary">
+          <i class="fas fa-eraser"></i>
+          Clear logs
+        </button>
+      </div>
+      <div class="col-8">
+        <h2 class="mb-4">
+          <i class="fas fa-terminal" aria-hidden="true"></i>
+          Logs
+        </h2>
+        <code id="logger">
+        </code>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/79980e4fcc.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
